@@ -93,7 +93,7 @@ function install_file() {
     $sudo mkdir --parents -- "${target_dir}"
 
   $sudo install --mode="${target_mode}" \
-    -T -- "${source}" "${target_dir}/${target_name}"
+    -T "${source}" "${target_dir}/${target_name}"
 }
 
 function main() {
